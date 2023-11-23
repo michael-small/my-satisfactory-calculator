@@ -24,6 +24,18 @@
         "enableI18nLegacyMessageIdFormat": false,
         "strictInjectionParameters": true,
         "strictInputAccessModifiers": true,
-        "strictTemplates": true
+        "strictTemplates": true,
+        "extendedDiagnostics": {
+            "checks": {
+                "invalidBananaInBox": "error",
+                "nullishCoalescingNotNullable": "error",
+                "missingControlFlowDirective": "error",
+                "textAttributeNotBinding": "error",
+                "missingNgForOfLet": "error",
+                "suffixNotSupported": "error",
+                "optionalChainNotNullable": "error"
+            },
+            "defaultCategory": "error"
+        }
     }
 }

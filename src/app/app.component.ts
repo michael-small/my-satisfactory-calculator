@@ -15,5 +15,5 @@ import { Observable } from 'rxjs';
 export class AppComponent {
     itemService = inject(ItemsService);
 
-    rawItems?: Observable<RawMaterial[]> = this.itemService.getRawMaterials();
+    rawItems: Observable<RawMaterial[]> = this.itemService.getRawMaterials();
 }
