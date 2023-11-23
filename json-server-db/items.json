@@ -1,22 +1,50 @@
 {
     "rawMaterials": [
         {
-            "name": "iron"
+            "id": "r1",
+            "name": "Iron",
+            "type": "ore",
+            "harvester": "miner"
+        },
+        {
+            "id": "r2",
+            "name": "Copper",
+            "type": "ore",
+            "harvester": "miner"
         }
     ],
     "derivedMaterials": [
         {
-            "name": "iron plate",
+            "name": "Iron Ingot",
             "recipes": [
                 {
                     "material1": {
-                        "name": "iron",
-                        "amountPerMinute": 1
+                        "name": "Iron",
+                        "amountPerMinute": 30
+                    },
+                    "material2": null,
+                    "material3": null,
+                    "material4": null,
+                    "producer": "Smelter",
+                    "producedPerMinute": 30,
+                    "learned": "default"
+                }
+            ]
+        },
+        {
+            "name": "Iron Plate",
+            "recipes": [
+                {
+                    "material1": {
+                        "name": "Iron Ingot",
+                        "amountPerMinute": 30
                     },
                     "material2": null,
                     "material3:": null,
                     "material4": null,
-                    "producedPerMinute": -1
+                    "producer": "Smelter",
+                    "producedPerMinute": 20,
+                    "learned": "default"
                 }
             ]
         }

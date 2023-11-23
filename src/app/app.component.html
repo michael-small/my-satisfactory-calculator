@@ -1,10 +1,19 @@
 <h1>Create basic my-satisfactory-calculator</h1>
 
-@if (rawItems | async; as rawItems) {
+@if (rawItems$ | async; as rawItems) {
     <h1>Raw items</h1>
     <ul>
         @for (item of rawItems; track item.name) {
-            <li>{{ item.name }}</li>
+            <li>{{ item.id }}: {{ item.name }} {{ item.type }}</li>
+        }
+    </ul>
+}
+
+<h2>Ores</h2>
+@if (ores$ | async; as ores) {
+    <ul>
+        @for (ore of ores; track ore.name) {
+            <li>{{ ore.id }}: {{ ore.name }}</li>
         }
     </ul>
 }
