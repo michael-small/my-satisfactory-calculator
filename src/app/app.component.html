@@ -17,3 +17,21 @@
         }
     </ul>
 }
+
+<h2>Fluids</h2>
+@if (fluids$ | async; as fluids) {
+    <ul>
+        @for (fluid of fluids; track fluid.name) {
+            <li>{{ fluid.id }}: {{ fluid.name }}</li>
+        }
+    </ul>
+}
+
+<h2>Derived Materials</h2>
+@if (derivedMaterials$ | async; as derivedMaterials) {
+    <ul>
+        @for (material of derivedMaterials; track material.name) {
+            <li>{{ material.id }}: {{ material.name }}</li>
+        }
+    </ul>
+}
