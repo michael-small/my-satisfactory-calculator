@@ -1,1 +1,10 @@
 <h1>Create basic my-satisfactory-calculator</h1>
+
+@if (rawItems | async; as rawItems) {
+    <h1>Raw items</h1>
+    <ul>
+        @for (item of rawItems; track item.name) {
+            <li>{{ item.name }}</li>
+        }
+    </ul>
+}

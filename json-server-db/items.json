@@ -1,0 +1,24 @@
+{
+    "rawMaterials": [
+        {
+            "name": "iron"
+        }
+    ],
+    "derivedMaterials": [
+        {
+            "name": "iron plate",
+            "recipes": [
+                {
+                    "material1": {
+                        "name": "iron",
+                        "amountPerMinute": 1
+                    },
+                    "material2": null,
+                    "material3:": null,
+                    "material4": null,
+                    "producedPerMinute": -1
+                }
+            ]
+        }
+    ]
+}
