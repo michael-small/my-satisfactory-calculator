@@ -5,13 +5,19 @@
             "label": "Run JSON Server",
             "type": "shell",
             "command": "json-server json-server-db/items.json --watch",
-            "problemMatcher": []
+            "problemMatcher": [],
+            "presentation": {
+                "group": "run app"
+            }
         },
         {
             "label": "Serve App",
             "type": "shell",
             "command": "ng serve",
-            "problemMatcher": []
+            "problemMatcher": [],
+            "presentation": {
+                "group": "run app"
+            }
         }
     ]
 }
